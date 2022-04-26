@@ -4,13 +4,13 @@ var metricToChoose = "°C";
 
 function clickCity(i) {
   if (i == 1) {
-    alert("You have clicked Burbank city");
+    alert("Loading weather report... for Burbank city");
   } else {
     if (i == 2) {
-      alert("You have clicked Chicago city");
+      alert("Loading weather report... for Chicago city");
     } else {
       if (i == 3) {
-        alert("You have clicked Dallas city");
+        alert("Loading weather report... for Dallas city");
       }
     }
   }

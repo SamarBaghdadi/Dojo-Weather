@@ -112,11 +112,14 @@ select {
 }
 /* --------------------Lower Body-------------------------------- */
 .lower-body {
+  width: inherit;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border: 5px solid black;
   color: black;
+  position: fixed;
+  bottom: 0;
 }
 .lower-center {
   display: flex;
