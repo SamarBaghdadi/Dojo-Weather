@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <div class="nav">
+        <h1 class="nav-title">DojoWeather</h1>
+        <ul class="nav-links">
+          <li><button class="btn" onclick="clickCity(1)">Burbank</button></li>
+          <li><button class="btn" onclick="clickCity(2)">Chicago</button></li>
+          <li><button class="btn" onclick="clickCity(3)">Dallas</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="upper-body">
+        <h1 class="city-title">San Jose</h1>
+        <div class="upper-right">
+          <p>show temperature in</p>
+          <select name="temperature" id="metric" onchange="metricChange()">
+            <option>°C</option>
+            <option>°F</option>
+          </select>
+        </div>
+      </div>
+      <div class="mid-body">
+        <div class="column">
+          <div class="isCentered">
+            <h2>Today</h2>
+            <img class="icons" src="assets/some_rain.png" alt="rain" />
+            <p>some rain</p>
+          </div>
+          <div class="temp">
+            <label class="hot" id="b1">24°</label>
+            <label class="cold" id="b2">18°</label>
+          </div>
+        </div>
+        <div class="column">
+          <div class="isCentered">
+            <h2>Tomorrow</h2>
+            <img class="icons" src="assets/some_sun.png" alt="sun" />
+            <p>some sun</p>
+          </div>
+          <div class="temp">
+            <label class="hot" id="b3">27°</label>
+            <label class="cold" id="b4">19°</label>
+          </div>
+        </div>
+        <div class="column">
+          <div class="isCentered">
+            <h2>Friday</h2>
+            <img class="icons" src="assets/some_clouds.png" alt="clouds" />
+            <p>some clouds</p>
+          </div>
+          <div class="temp">
+            <label class="hot" id="b5">21°</label>
+            <label class="cold" id="b6">16°</label>
+          </div>
+        </div>
+        <div class="column">
+          <div class="isCentered">
+            <h2>Saturday</h2>
+            <img class="icons" src="assets/some_sun.png" alt="sun" />
+            <p>some sun</p>
+          </div>
+          <div class="temp">
+            <label class="hot" id="b7">26°</label>
+            <label class="cold" id="b8">21°</label>
+          </div>
+        </div>
+      </div>
+      <div class="lower-body" id="cookie">
+        <img class="icons" src="assets/cookie.png" alt="cookie" />
+        <div class="lower-center">
+          <h1>Stop! Cookie time</h1>
+          <p>
+            Le succès est un mauvais professeur. Il pousse les gens intelligents
+            à croire qu'ils sont infaillibles.
+            <a href="https://fr.wikipedia.org/wiki/Jules_Renard"
+              >(Jules Renard, écrivain)</a
+            >
+            Il est moins grave de perdre que de se perdre
+            <a href="https://fr.wikipedia.org/wiki/Romain_Gary"
+              >(Romain Gary, écrivain)</a
+            >
+          </p>
+        </div>
+        <button class="fancy" onclick="removeDiv()">I Accept</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
